@@ -3,7 +3,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Azure DevOps Kubernetes Pipeline Running updated version!"
-
+    return "CI Automation Test Successful"      
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
