@@ -9,8 +9,9 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/378658/azure-devops-k8s-pipeline.git'
+                git url: 'https://github.com/378658/azure-devops-k8s-pipeline.git',
+                    branch: 'main',
+                    credentialsId: 'github-token-cred' // Use the ID from Step 2
             }
         }
 
